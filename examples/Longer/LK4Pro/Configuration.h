@@ -1718,7 +1718,7 @@
  * SD Card support is disabled by default. If your controller has an SD slot,
  * you must uncomment the following option or it won't work.
  */
-//#define SDSUPPORT
+#define SDSUPPORT
 
 /**
  * SD CARD: SPI SPEED
@@ -2423,6 +2423,8 @@
   #undef THERMAL_PROTECTION_BED
   #undef THERMAL_PROTECTION_CHAMBER
   #undef BED_MAXTEMP
+  #undef BAUDRATE
 
   #define BED_MAXTEMP 300
+  #define BAUDRATE 57600
 #endif
